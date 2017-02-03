@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack"
+    "build": "npm run build:webpack && npm run build:rollup-with-barrels && npm run build:rollup-without-barrels",
+    "build:webpack": "webpack",
+    "build:rollup-with-barrels": "rollup -c rollup-with-barrels.config.js",
+    "build:rollup-without-barrels": "rollup -c rollup-without-barrels.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "rollup": "^0.41.4",
     "webpack": "^2.2.1"
   }
 }

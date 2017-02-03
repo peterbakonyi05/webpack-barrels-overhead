@@ -2,13 +2,13 @@ module.exports = [
 	{
 		entry: "./src/with-barrels/index.js",
 		output: {
-			filename: "output/with-barrels-bundle.js"
+			filename: "output/webpack-with-barrels-bundle.js"
 		}
 	},
 	{
 		entry: "./src/without-barrels/index.js",
 		output: {
-			filename: "output/without-barrels-bundle.js"
+			filename: "output/wepback-without-barrels-bundle.js"
 		}
 	}
 ];

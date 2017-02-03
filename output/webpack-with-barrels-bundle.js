@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -97,15 +97,49 @@ class Feature2Service {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__feature1_service__ = __webpack_require__(0);
+/* unused harmony namespace reexport */
+
+
+
+
+const FEATURE1_PROVIDERS = [
+	__WEBPACK_IMPORTED_MODULE_0__feature1_service__["a" /* Feature1Service */]
+];
+/* harmony export (immutable) */ __webpack_exports__["a"] = FEATURE1_PROVIDERS;
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__feature2_service__ = __webpack_require__(1);
+/* unused harmony namespace reexport */
+
+
+
+
+const FEATURE2_PROVIDERS = [
+	__WEBPACK_IMPORTED_MODULE_0__feature2_service__["a" /* Feature2Service */]
+];
+/* harmony export (immutable) */ __webpack_exports__["a"] = FEATURE2_PROVIDERS;
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__feature1_feature1_service__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__feature2_feature2_service__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__feature1_index__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__feature2_index__ = __webpack_require__(3);
 
 
 
 const PROVIDERS = [
-	__WEBPACK_IMPORTED_MODULE_0__feature1_feature1_service__["a" /* Feature1Service */],
-	__WEBPACK_IMPORTED_MODULE_1__feature2_feature2_service__["a" /* Feature2Service */]
+	...__WEBPACK_IMPORTED_MODULE_0__feature1_index__["a" /* FEATURE1_PROVIDERS */],
+	...__WEBPACK_IMPORTED_MODULE_1__feature2_index__["a" /* FEATURE2_PROVIDERS */]
 ];
 /* harmony export (immutable) */ __webpack_exports__["PROVIDERS"] = PROVIDERS;
 
